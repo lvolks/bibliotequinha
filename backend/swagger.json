@@ -1,0 +1,186 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Ecommerce Pet Shop",
+      "description": "Um Ecommerce com tema Pet Shop",
+      "version": "1.0"
+    },
+    "host": "localhost:3001",
+    "basePath": "/",
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/generos": {
+        "get": {
+          "description": "Retorna Generos.",
+          "operationId": "GET - Generos",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/generos": {
+        "post": {
+          "description": "Cadastro de genero.",
+          "operationId": "POST - Generos",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/generos/:codigo": {
+        "get": {
+          "description": "Retorna genero específica.",
+          "operationId": "GET - Generos",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/generos/:codigo": {
+        "put": {
+          "description": "Atualiza genero específica",
+          "operationId": "PUT - Generos",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/generos/:codigo": {
+        "delete": {
+          "description": "Deleta genero específica",
+          "operationId": "DELETE - Generos",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/usuarios": {
+        "get": {
+          "description": "Retorna Usuarios.",
+          "operationId": "GET - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/usuarios": {
+        "post": {
+          "description": "Cadastro de Usuario.",
+          "operationId": "POST - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/usuarios/:codigo": {
+        "get": {
+          "description": "Retorna usuario específico.",
+          "operationId": "GET - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/usuarios/:codigo": {
+        "put": {
+          "description": "Atualiza usuario específico",
+          "operationId": "PUT - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/usuarios/:codigo": {
+        "delete": {
+          "description": "Deleta usuario específico",
+          "operationId": "DELETE - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/login": {
+        "post": {
+          "description": "Login de usuario",
+          "operationId": "POST - Login",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/reservas": {
+        "get": {
+          "description": "Retorna Reservas.",
+          "operationId": "GET - reservas",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/reservas": {
+        "post": {
+          "description": "Cadastro de Reserva.",
+          "operationId": "POST - Reservas",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/reservas/:codigo": {
+        "get": {
+          "description": "Retorna reserva específico.",
+          "operationId": "GET - Reservas",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/livros": {
+        "get": {
+          "description": "Retorna Usuarios.",
+          "operationId": "GET - Usuarios",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/livros": {
+        "post": {
+          "description": "Cadastro de livros.",
+          "operationId": "POST - Livros",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/livros/:codigo": {
+        "get": {
+          "description": "Retorna livros específico.",
+          "operationId": "GET - Livros",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/livros/:codigo": {
+        "put": {
+          "description": "Atualiza livro específico",
+          "operationId": "PUT - Livros",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      },
+      "/livros/:codigo": {
+        "delete": {
+          "description": "Deleta livro específico",
+          "operationId": "DELETE - Livros",
+          "parameters": [
+          ],
+          "responses": {}
+        }
+      }
+    }   
+}
