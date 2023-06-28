@@ -21,16 +21,14 @@ export default function Cadastro() {
       .then((response) => {
         console.log(response.data);
         alert("O usuário " + response.data.codigo + " foi criado com sucesso!");
+        setNome("");
+        setEmail("");
+        setSenha("");
       })
       .catch((err) => {
         console.error(err);
         alert("Ocorreu um erro! Veja no console ..");
       })
-      .finally(() => {
-        setNome("");
-        setEmail("");
-        setSenha("");
-      });
   };
   
 

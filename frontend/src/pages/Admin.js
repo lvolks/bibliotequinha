@@ -40,6 +40,8 @@ export default function Admin() {
     <h4>Cadastrar livro</h4>
 
     <CadastroLivro />
+    <br/>
+    <h4>Cadastrar genero</h4>
     <br />
     <CadastroGenero />
     
