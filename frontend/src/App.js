@@ -1,6 +1,6 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import Header from './components/Header/index';
-import RoutesConfig from './RoutesConfig';
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header/index";
+import RoutesConfig from "./RoutesConfig";
 
 function App() {
   return (
