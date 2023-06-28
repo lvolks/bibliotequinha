@@ -45,7 +45,7 @@ export default function Card({ searchValue, genero }) {
           <div className="coluna" key={i}>
             <div className="card">
               <img
-                src="/livro.png"
+                src="https://cdn-icons-png.flaticon.com/512/5999/5999928.png"
                 alt={livro.nome}
                 className="card-img-1"
               />
@@ -55,9 +55,6 @@ export default function Card({ searchValue, genero }) {
                 </h5>
                 <p className="genero">
                   {genero.nome}
-                </p>
-                <p className="descricao">
-                  {livro.descrição}
                 </p>
                 <p className="card-text">{livro.descricao}</p>
                   <a href={`/detalhes/${livro.codigo}`}>
