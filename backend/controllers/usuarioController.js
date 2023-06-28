@@ -14,7 +14,6 @@ class UsuarioController {
 
         const resultado = await usuarioModel.create(usuario);
         auth.incluirToken(resultado);
-        hash
         res.status(201).json(resultado);
     }
 
