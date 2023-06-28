@@ -17,6 +17,11 @@ async function gerarHash(usuario) {
   return usuario;
 }
 
+function incluirToken(usuario) {
+  const token = geraToken(usuario);
+  usuario.token = token;
+}
+
 function autorizar(req, res, next) {
   const authHeader = req.headers.authorization;
 
@@ -48,5 +53,6 @@ function autorizar(req, res, next) {
 module.exports = {
   gerarHash,
   geraToken,
-  autorizar
+  autorizar,
+  incluirToken
 };

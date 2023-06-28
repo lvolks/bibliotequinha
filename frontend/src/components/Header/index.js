@@ -32,6 +32,11 @@ export default function Header() {
           Painel de admin
         </button>
       </Link>
+      <Link to="/consultarusuario">
+        <button type="button" className="btn btn-outline-primary me-2 login">
+          Usuário
+        </button>
+      </Link>
       <div>
         {location.pathname != "/login" && (
           <a href={`/login`}>
