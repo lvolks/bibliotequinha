@@ -2,7 +2,7 @@ import React from 'react'
 import api from "../../services/api";
 import { useNavigate } from 'react-router-dom';
 
-export default function EditarUsuario() {
+export default function ConsultarUsuario() {
   const [codigo, setCodigo] = React.useState('')
   const [usuario, setUsuario] = React.useState('')
   const [nome, setNome] = React.useState('')

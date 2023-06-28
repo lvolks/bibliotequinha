@@ -44,15 +44,6 @@
   height: 200px;
 }
 
-.descricao{
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: break-word;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-}
-
 .genero{
   background-color: rgb(255, 210, 87);
   border-radius: 10px;

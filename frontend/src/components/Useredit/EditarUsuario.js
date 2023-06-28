@@ -15,7 +15,7 @@ export default function EditarUsuario() {
       const { data } = await api.get(`/usuarios/${codigo}`, {
       })
 
-      if (!data) alert('Usuário não encontrado')
+      if (!data) alert('Usuário não encontrado!')
 
       setUsuario(data)
       setNome(data.nome)
@@ -23,7 +23,6 @@ export default function EditarUsuario() {
       setSenha(data.senha)
     } catch (error) {
       console.error(error)
-      alert('Ocorreu um erro')
     }
   }
 
@@ -56,6 +55,20 @@ export default function EditarUsuario() {
     }
   }
 
+  async function deleteUser() {
+    try {
+      await api.delete(`/usuarios/${codigo}`);
+      alert('Usuário excluído!');
+      setUsuario('');
+      setNome('');
+      setEmail('');
+      setSenha('');
+    } catch (error) {
+      console.error(error);
+      alert('Ocorreu um erro ao excluir o usuário');
+    }
+  }
+
   return <div>
     <form onSubmit={handleSubmit}>
       <div className="form-group">
@@ -72,7 +85,7 @@ export default function EditarUsuario() {
           />
         </label>
       </div>
-      <button type="submit" className="btn btn-primary botao">
+      <button type="submit" className="btn btn-primary botao" >
         Confirmar
       </button>
       <br />
@@ -111,6 +124,13 @@ export default function EditarUsuario() {
 
           <button className="btn btn-success" onClick={save}>
             Salvar
+          </button>
+
+          <br />
+          <br />
+
+          <button className="btn btn-danger" onClick={deleteUser}>
+              Excluir usuário
           </button>
         </div>
       </div>
