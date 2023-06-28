@@ -1,43 +1,42 @@
-.header-options-container{
-    background-color: #FFF028;
-    display: flex;
-    width: 100%;
-    gap: 8px;
-    align-items: center;
-    padding: 10px 1% 10px 1%;
-
+.header-options-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px 1% 10px 1%;
+  position: fixed;
 }
 
-.header-options-container > div{
-    display: inline-block;
-    text-align: right;
-    padding:0;
+.header-options-container > div {
+  display: inline-block;
+  text-align: right;
+  padding: 0;
 }
 
-a{
-    text-decoration: none !important;
-    color: black !important;
+a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
-.carrinho{
-    width: 24px;
+.carrinho {
+  width: 24px;
+  margin-right: 10px;
 }
 
 .sobre {
-    margin-left: 3px;
-    margin-right: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
-.logo-icon{
-    width: 100%;
-    object-fit: cover;
-    height: 50px;
-    z-index: 2;
+.logo-icon {
+  width: 100%;
+  object-fit: cover;
+  height: 50px;
+  z-index: 2;
 }
 
-.login, .registro{
-    color: black !important;
-    border: 1px solid black !important;
-    background-color: rgba(255, 255, 255, 0) !important;
+.login,
+.registro {
+  color: white !important;
+  border: 1px solid white !important;
+  background-color: transparent !important;
 }
-
