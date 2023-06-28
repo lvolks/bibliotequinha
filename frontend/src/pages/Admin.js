@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import api from "../services/api";
 import CadastroLivro from '../components/Admin/CadastroLivro';
 import CadastroGenero from '../components/Admin/CadastroGenero';
+import ConsultaReserva from '../components/Admin/ConsultaReserva';
 
 export default function Admin() {
   async function load() {
@@ -44,6 +45,11 @@ export default function Admin() {
     <h4>Cadastrar genero</h4>
     <br />
     <CadastroGenero />
-    
+    <br/>
+    <h4>Consultar reserva</h4>
+    <br />
+    <ConsultaReserva />
+
+    <br /><br /><br />
   </div>
 }
