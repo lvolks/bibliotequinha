@@ -35,7 +35,7 @@ export default function SearchBar() {
                 {generos.map((genero) => (
                     <div key={genero.id} className={genero.nome.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")}>
                         <h1>{genero.nome}</h1>
-                        <Card searchValue={busca} genero={genero.nome} />
+                        <Card searchValue={busca} genero={genero} />
                     </div>
                 ))}
             </div>

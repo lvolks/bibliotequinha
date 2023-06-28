@@ -18,8 +18,9 @@ export default function Card({ searchValue, genero }) {
   useEffect(() => {
     const filtered = livros.filter((livro) => {
       const lowerCaseSearchValue = typeof searchValue === 'string' ? searchValue.toLowerCase() : '';
+      console.log(livro, genero)
       return (
-        livro.genero === genero &&
+        livro.genero === genero._id &&
         (typeof searchValue !== 'string' || livro.nome.toLowerCase().includes(lowerCaseSearchValue))
       );
     });
@@ -44,7 +45,7 @@ export default function Card({ searchValue, genero }) {
           <div className="coluna" key={i}>
             <div className="card">
               <img
-                src={livro.imagem}
+                src="/livro.png"
                 alt={livro.nome}
                 className="card-img-1"
               />
@@ -53,7 +54,7 @@ export default function Card({ searchValue, genero }) {
                   {livro.nome}
                 </h5>
                 <p className="genero">
-                  {livro.genero}
+                  {genero.nome}
                 </p>
                 <p className="descricao">
                   {livro.descrição}

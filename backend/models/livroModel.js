@@ -6,11 +6,11 @@ const LivroSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-    descrição: {
+      autor: {
         type: String,
         required: true,
       },
-    imagem: {
+    ano: {
         type: String,
         required: true,
       },

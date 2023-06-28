@@ -3,12 +3,10 @@ const auth = require('./app.json');
 
 const bcryptjs = require('bcryptjs');
 
-async function incluirToken(usuario) {
-  const token = await jwt.sign({ codigo: usuario.codigo }, auth.appId, {
-    expiresIn: '2m'
+async function geraToken(usuario) {
+  return jwt.sign({ userId: usuario.codigo }, auth.appId, {
+    expiresIn: '4h'
   });
-  usuario.token = token;
-  usuario.senha = undefined;
 }
 
 async function gerarHash(usuario) {
@@ -42,13 +40,13 @@ function autorizar(req, res, next) {
     if (err) {
       return res.status(401).send({ error: 'Token inválido!' });
     }
-    req.usuarioLogadoId = usuario.id;
+    req.userId = usuario.userId;
     return next();
   });
 }
 
 module.exports = {
   gerarHash,
-  incluirToken,
+  geraToken,
   autorizar
 };

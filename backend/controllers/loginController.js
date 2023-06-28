@@ -16,7 +16,22 @@ class LoginController {
             return res.status(400).send({ error: 'Senha inválida!' });
         }
 
-        await auth.incluirToken(usuario);
+        const token = await auth.geraToken(usuario);
+        const usr = usuario._doc
+        delete usr.senha
+        res.status(200).json({
+            ...usr,
+            token
+        });
+    }
+
+    async getMe(req, res) {
+        const usuario = await usuarioModel.findOne({ codigo: req.userId }).select('-senha')
+        
+        if (!usuario) {
+            return res.status(400).send({ error: 'Usuário não encontrado!' });
+        }
+
         res.status(200).json(usuario);
     }
 }

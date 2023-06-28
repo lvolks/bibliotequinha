@@ -17,22 +17,13 @@ export default function Detalhes() {
     console.log('Quantidade:', quantidade);
 
     const itemCarrinho = {
-      id: livro.id,
-      nome: livro.nome,
-      quantidade: quantidade
+      id: livro._id,
+      nome: livro.nome
     };
 
-    const carrinhoAtual = JSON.parse(localStorage.getItem("carrinho")) || [];
-    const novoCarrinho = [...carrinhoAtual, itemCarrinho];
 
-    localStorage.setItem("carrinho", JSON.stringify(novoCarrinho));
-    if(quantidade==1){
-    window.alert("Item adicionado ao carrinho com sucesso!")
-    } 
-    else{
-      window.alert("Itens adicinados ao carrinho com sucesso!")
-    }
-    navigate("/");
+    localStorage.setItem("carrinho", JSON.stringify(itemCarrinho));
+    navigate("/reserva");
   };
 
   useEffect(() => {
@@ -59,31 +50,23 @@ export default function Detalhes() {
             <div className="row">
               <div className="col">
                 <div className="card" style={{ maxWidth: "500px" }}>
-                  <img src={livro.imagem} alt={livro.nome} className="card-img-top" />
+                  <img src="/livro.png" alt={livro.nome} className="card-img-top" />
                 </div>
               </div>
               <div className="col">
                 <div className="card mx-auto p-3">
                   <h1 className="text-center">{livro.nome}</h1>
-                  <p className="text-center">Preço do livro: {livro.preço}R$</p>
-                  <p className="text-center">Descrição do livro: {livro.descrição}</p>
+                 
+                 
                   <div className="text-center">
-                    <label>
-                      Quantidade:
-                      <input
-                        type="number"
-                        min="1"
-                        value={quantidade}
-                        onChange={(e) => setQuantidade(e.target.value)}
-                      />
-                    </label>
+                    
                     <button className="btn btn-primary" onClick={adicionarAoCarrinho}>
-                      Adicionar ao carrinho
+                      Reservar
                     </button>
                   </div>
                 </div>
               </div>
-              {Object.keys(livro).length !== 0 && <Comments livro={codigo} />}
+            
             </div>
           )}
         </>

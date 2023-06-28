@@ -3,13 +3,8 @@ const auth = require('../auth/auth');
 
 class UsuarioController {
     async salvar(req, res) {
-        let usuario;
+        let usuario = req.body
 
-        if (req.is("multipart/form-data")) {
-            usuario = JSON.parse(req.body.usuario);
-        } else if (req.is("application/json")) {
-            usuario = req.body;
-        }
         const max = await usuarioModel.findOne({}).sort({ codigo: -1 });
         usuario.codigo = max == null ? 1 : max.codigo + 1;
 
@@ -19,6 +14,7 @@ class UsuarioController {
 
         const resultado = await usuarioModel.create(usuario);
         auth.incluirToken(resultado);
+        hash
         res.status(201).json(resultado);
     }
 

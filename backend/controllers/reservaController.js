@@ -1,5 +1,6 @@
 const reservaModel = require('../models/reservaModel');
 const usuarioModel = require('../models/usuarioModel');
+const livroModel = require('../models/livroModel');
 
 class ReservaController {
     async salvar(req, res) {
@@ -7,8 +8,11 @@ class ReservaController {
         const max = await reservaModel.findOne({}).sort({ codigo: -1 });
         reserva.codigo = max == null ? 1 : max.codigo + 1;
 
-        const usuario = await usuarioModel.findOne({ codigo: reserva.usuario_id });
-        reserva.usuario = usuario.nome;
+        const usuario = await usuarioModel.findOne({ codigo: req.userId });
+        reserva.usuario = usuario._id;
+
+        const livro = await livroModel.findOne({ _id: reserva.livroId });
+        reserva.livro = usuario._id;
 
         const resultado = await reservaModel.create(reserva);
         res.status(201).json(resultado);

@@ -6,25 +6,18 @@ export default function Cadastro() {
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
-
-  const usuario= JSON.stringify({
-    nome: nome,
-    email: email,
-    senha: senha,
-  });
   
   const handleSubmit = (event) => {
     event.preventDefault();
   
-    const formData = new FormData();
-    formData.append("usuario", usuario);
+    const usuario = {
+      nome,
+      email,
+      senha,
+    };
 
     api
-    .post("/usuarios", formData, {
-      headers: {
-        "Content-Type": "multipart/form-data", 
-      },
-    })
+    .post("/usuarios", usuario)
       .then((response) => {
         console.log(response.data);
         alert("O usuário " + response.data.codigo + " foi criado com sucesso!");

@@ -1,7 +1,9 @@
 .header-options-container{
     background-color: #FFF028;
-    display: grid;
-    grid-template-columns: 10% 75% auto auto auto;
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
     padding: 10px 1% 10px 1%;
 
 }
@@ -18,8 +20,12 @@ a{
 }
 
 .carrinho{
-    margin-top: 5px;
-    width: 2%;
+    width: 24px;
+}
+
+.sobre {
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .logo-icon{
@@ -27,10 +33,6 @@ a{
     object-fit: cover;
     height: 50px;
     z-index: 2;
-}
-
-.sobre{
-    margin-top: 8px !important;
 }
 
 .login, .registro{

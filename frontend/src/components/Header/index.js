@@ -12,14 +12,12 @@ export default function Header() {
             <img className="logo-icon" src={process.env.PUBLIC_URL + '/the-petshop-logo-transparent.png'}></img>
             </Link>
             </div>
+            <div style={{
+              flex: 1
+            }} />
             <div>
             <Link to="/reserva">
               <img className="carrinho" src={process.env.PUBLIC_URL + '/carrinho.png'}></img>
-            </Link>
-            </div>
-            <div className="sobre">
-            <Link to="/sobre">
-              Sobre
             </Link>
             </div>
             <div>

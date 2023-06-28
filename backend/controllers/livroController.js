@@ -8,8 +8,8 @@ class LivroController {
         const max = await livroModel.findOne({}).sort({ codigo: -1 });
         livro.codigo = max == null ? 1 : max.codigo + 1;
 
-        const genero = await generoModel.findOne({ codigo: livro.genero_id });
-        livro.genero = genero.nome;
+        const genero = await generoModel.findOne({ codigo: livro.generoId });
+        livro.genero = genero._id;
 
 
         const resultado = await livroModel.create(livro);
