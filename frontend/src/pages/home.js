@@ -6,12 +6,12 @@ import "./home.css";
 
 function Home() {
   return (
-    <div style={{backgroundColor: "#D5F3FF"}}>
-      <Banner/>
+    <div style={{ backgroundColor: "rgb(240, 240, 240)" }}>
+      <Banner />
       <h1>Catálogo de Livros</h1>
       <h3>Livros disponíveis</h3>
       {/* <Title title=""/> */}
-      <SearchBar/>
+      <SearchBar />
     </div>
   );
 }
