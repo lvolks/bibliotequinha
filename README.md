@@ -7,7 +7,9 @@ Matheus Dias
 Rodolfo Berwanger
 <br>
 Lucas Volkweis
-
+<br>
+Guilherme Silva Santos
+<br>
 Trabalho realizado para a matéria de Modelagem de Software utilizando React, MongoDB e conceitos de JWT.
 <br>
 <h2>Guia de instalação</h2>
@@ -18,14 +20,18 @@ Trabalho realizado para a matéria de Modelagem de Software utilizando React, Mo
 <br>
 <p>Rodar os seguintes comandos:</p>
 <br>
-<p>"cd frontend"</p>
+<p>'cd frontend'</p>
 <br>
-<p>"npm i"</p>
+<p>'npm i'</p>
+<br>
+<p>'npm start'</p>
 <br>
 <h4>Segunda parte do terminal</h4>
 <br>
 <p>Rodar os seguintes comandos:</p>
 <br>
-<p>"cd backend"</p>
+<p>'cd backend'</p>
 <br>
-<p>"npm i"</p>
+<p>'npm i'</p>
+<br>
+<p>'npm start'</p>
