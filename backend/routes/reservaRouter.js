@@ -6,7 +6,7 @@ const auth = require('../auth/auth');
 router.use(auth.autorizar);
 
 router.post('/', reservaController.salvar);
-router.get('/:clienteId', reservaController.listar);
-router.get('/:clienteId/:codigo', reservaController.buscarPorCodigo);
+router.get('/:codigo', reservaController.buscarPorCodigo);
+router.put('/:codigo', reservaController.editar);
 
 module.exports = router;
