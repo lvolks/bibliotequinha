@@ -34,22 +34,41 @@
 .slogan {
   position: absolute;
   right: 2%;
-  top: 27.5vh;
+  top: 20.5vh;
   display: inline-block;
-  width: 50%;
+  width: 40%;
   word-wrap: break-word !important;
   white-space: normal !important;
   justify-content: right !important;
   color: white;
+  font-family: "Bacasime Antique", serif;
+  font-weight: 200;
 }
 
 .slogan-1 {
   text-align: right !important;
   font-weight: 900 !important;
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .slogan-2 {
   text-align: right !important;
-  font-size: 3rem;
+  font-size: 4rem;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.arrow img {
+  margin-top: 10px;
+  display: inline-block;
+  width: 50%;
+}
+
+.arrow:hover {
+  cursor: pointer;
 }

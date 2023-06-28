@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.container-2 > div {
+  background-color: rgb(238, 238, 238);
+  margin: 10px 2% 10px 2%;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+button {
+  background-color: #d1a177 !important;
+  border: none !important;
+}
