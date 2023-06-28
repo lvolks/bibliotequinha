@@ -6,12 +6,16 @@ import Reserva from "./pages/Reserva";
 import Home from "./pages/home";
 import Detalhes from "./pages/detalhes";
 import Admin from "./pages/Admin";
+import EditarUsuario from "./pages/editarUsuario"
+import ConsultarUsuario from "./pages/consultarUsuario"
 
 export default function RoutesConfig() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="usuario" element={<Usuario />} />
+      <Route path="editarusuario" element={<EditarUsuario />} />
+      <Route path="consultarusuario" element={<ConsultarUsuario />} />
       <Route path="login" element={<Login />} />
       <Route path="reserva" element={<Reserva />} />
       <Route path="admin" element={<Admin />} />
