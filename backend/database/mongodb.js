@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URL = 'mongodb://0.0.0.0:27017/biblioteca';
+const URL = process.env.MONGO_URL || 'mongodb://0.0.0.0:27017/biblioteca';
 const db = mongoose.connect(URL);
 const con = mongoose.connection;
 

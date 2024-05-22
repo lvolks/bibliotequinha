@@ -35,3 +35,17 @@ npm start
 ```
 
 Depois disso, o site deve estar disponível em http://localhost:3000
+
+### Guia do docker
+
+Para buildar a imagem do backend, entre na pasta do backend e utilize esse comando:
+```bash
+docker build -t bibliotequinha-back .
+```
+
+Para executar a stack via compose, na pasta raiz execute:
+```
+docker compose up
+OU
+docker compose up -d // isso irá rodar no background
+```

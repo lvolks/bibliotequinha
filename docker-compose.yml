@@ -1,0 +1,27 @@
+version: '3.3'
+services:
+  back:
+    image: bibliotequinha-back
+    environment:
+      MONGO_URL: mongodb://database:27017/biblioteca
+    ports:
+      - 3000:3000
+    networks:
+      - default
+  database:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: bibliotequinha
+    networks:
+      - default
+    volumes:
+      - db_data:/data/db
+
+networks:
+  default:
+    driver: overlay
+    
+
+volumes:
+  db_data:
