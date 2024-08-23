@@ -8,6 +8,8 @@
 
 Trabalho realizado para a matéria de Modelagem de Software utilizando React, MongoDB e conceitos de JWT.
 
+Work focused on backend carried out for the subject of Software Modeling using React, MongoDB and JWT concepts.
+
 <h2>Guia de instalação</h2>
 
 Primeiramente, é preciso ter o [Node.js](https://nodejs.org/en/download) e o [MongoDB](https://www.mongodb.com/try/download/community) instalado e rodando.
@@ -49,3 +51,11 @@ docker compose up
 OU
 docker compose up -d // isso irá rodar no background
 ```
+
+![image](https://github.com/user-attachments/assets/b83a58f6-0454-4756-8e58-72b9637a8f0d)
+![image](https://github.com/user-attachments/assets/87f1a11b-48c8-4e95-9a99-4cda0b0fceb0)
+![image](https://github.com/user-attachments/assets/cda94123-e199-4e3c-91e6-7b5f434500cc)
+![image](https://github.com/user-attachments/assets/a6f844ec-5408-4867-a9a2-e99e30909860)
+![image](https://github.com/user-attachments/assets/be5ccf87-4b0d-4820-a2de-5e93e8d6bb8a)
+![image](https://github.com/user-attachments/assets/19a6fe8e-faff-43da-a3a0-c613988b4378)
+![image](https://github.com/user-attachments/assets/20d3a8e6-35d8-4ff5-b6a6-828cf08ef1fb)
